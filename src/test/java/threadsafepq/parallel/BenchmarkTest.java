@@ -21,7 +21,7 @@ public class BenchmarkTest {
     private PipelinedPriorityQueue<Integer> pipelinedQueue;
     private PriorityBlockingQueue<Integer> blockingQueue;
     private LockFreePriorityQueue<Integer> lockFreeQueue;
-    private int[] threadCases = new int[]{1,2, 4,8,32,64,1000};
+    private int[] threadCases = new int[]{1,2, 4,8,16,32,64,1000};
     private int[] inputSizes = new int[]{ 5248 };
 
     @Before
