@@ -1,39 +1,18 @@
-# PipelinedPriorityQueue && LockFreePriorityQueue
+# Thread safe PriorityQueues
+
+#Instruction
+
+Implement a pipelinedPriorityQueue and a lockfreePriorityQueue that perform better than Java's PriorityBlockingQueue under concurrent access.
 
 
+#Requirements
 
-## Task
-
-Implement a pipelinedPriorityQueue and lockfreePriorityQueue that performs better than Java's PriorityBlockingQueue under concurrent access.
-
-## Build Instructions
-
-### Prerequisites
-
-* Java 1.8+
-* Maven
-
-### Run commands
-
-1. mvn package
-2. cd target/
-3. java -jar threadsafe-pq-1.0-SNAPSHOT-jar-with-dependencies.jar
+1. Java 1.8+
+2. Maven plugin in Eclipse
+3. Eclipse
 
 
-## Usage instructions
+#How to Use
 
-To create a new instance of a PipelinedPriorityQueue simply instantiate it like any other queue, example shown below.
-
-```
-BlockingQueue<Integer> queue = new PipelinedPriorityQueue<Integer>();
-queue.put(1);
-
-Integer head = queue.poll();
-
-```
-
-## Running performance tests
-
-To run the performance tests, remove the @Ignore annotation in the ./src/test/threadsafepq/parallel/BenchmarkTest.java class.
-
-Then, invoke the 'mvn package' again in the root of this repository.
+1. Open the files with Eclipse
+2. Run the project as Maven Test
